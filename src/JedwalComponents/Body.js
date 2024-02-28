@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import ListIcon from '../img/list-icon.svg'
+import Calender from '../img/calender-icon.svg'
 
 class Body extends Component{
   constructor(props){
     super(props)
     this.state = {
-      todo : "To Do List",
+      todo : "To do list",
       calender : "Calender",
       clickedButtonId: null,
       buttonId : null
@@ -24,14 +26,15 @@ class Body extends Component{
           onClick={() => this.action(1)}
           className={this.state.clickedButtonId === 1 ? 'clickedButton' : 'defaultButton'}
         >
-          <h2>{this.state.todo}</h2>
+          <h1>{this.state.todo}</h1>
+          <img className = "ListIcon" src = {ListIcon} alt = "list icon" />
         </button>
-
         <button
           onClick={() => this.action(2)}
           className={this.state.clickedButtonId === 2 ? 'clickedButton-calender' : 'defaultButton-calender'}
         >
-          <h2>{this.state.calender}</h2>
+          <h1>{this.state.calender}</h1>
+          <img className = "Calender" src = {Calender} alt = "calender icon" />
         </button>
 
         <div className = {this.state.clickedButtonId === 1 ? "show-content" : "content"}>
