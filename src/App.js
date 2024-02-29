@@ -1,21 +1,17 @@
-import React, { useState } from "react";
-import "./App.css";
-import Overlay from "./Buttons/NewTask";
+import { useState, useEffect } from 'react';
+import './App.css';
+import Home from './JedwalComponents/Home';
+import Body from './JedwalComponents/Body';
+import InputOverlay from './JedwalComponents/NewTaskButton';
+
 
 function App() {
-  const [activeTab, setActiveTab] = useState("todo");
   const [showOverlay, setShowOverlay] = useState(false);
-  const [overlayVisible, setOverlayVisible] = useState(false);
-
-  // Function to toggle the overlay
-  const toggleOverlay = () => {
-    setShowOverlay(!showOverlay);
-  };
 
   return (
     <div className="App">
-      <button onClick={() => setOverlayVisible(true)} className="plus-button">
-      <Overlay isVisible={overlayVisible} onClose={() => setOverlayVisible(false)} />
+      <button onClick={() => setShowOverlay(true)} className="plus-button">
+        {showOverlay && <InputOverlay closeOverlay={() => setShowOverlay(false)} />}
         <svg
           width="24"
           height="24"
@@ -40,27 +36,10 @@ function App() {
         </svg>
       </button>
 
-      <div
-        className="canvas"
-        style={{ background: activeTab === "todo" ? "white" : "#f0f0f0" }}
-      >
-        {activeTab === "todo" ? <p>To Do List</p> : <p>Calendar View</p>}
-      </div>
+      <Home />
+      <Body />
+      <div />
 
-      <div className="tabs">
-        <button
-          onClick={() => setActiveTab("todo")}
-          className={activeTab === "todo" ? "active" : ""}
-        >
-          <p>To Do</p>
-        </button>
-        <button
-          onClick={() => setActiveTab("calendar")}
-          className={activeTab === "calendar" ? "active" : ""}
-        >
-          <p>Calendar</p>
-        </button>
-      </div>
     </div>
   );
 }
