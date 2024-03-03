@@ -217,3 +217,30 @@
   border: none;
   cursor: pointer;
 }
+.dropdown-container {
+  left: 10px;
+  text-align: start;
+}
+
+/* Styles for the select element itself */
+.dropdown-container select {
+  width: 17%;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none; /* Removes default chrome and safari style */
+  -moz-appearance: none; /* Removes default style Firefox */
+  appearance: none; /* Remove default arrow in IE */
+}
+
+/* Style for adding an arrow symbol in the dropdown */
+.dropdown-container select:after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  pointer-events: none;
+}
