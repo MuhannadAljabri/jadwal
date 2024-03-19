@@ -244,3 +244,119 @@
   top: 15px;
   pointer-events: none;
 }
+
+/*Category button and pop up styling*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.category-button-container button {
+  width: 145px;
+  height: 22px;
+  position: absolute;
+  top: 43px;
+  left: 1300px;
+  background: none;
+  color: #4A4A48;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+  animation-duration: 0ms; /* Instant animation as required, though this will not have any visible effect */
+  transition: background-color 0.3s; /* Assuming you want a color change on hover, for example */
+}
+
+.popup {
+  width: 627px;
+  height: 235px;
+  border-radius: 42px; /* Border radius will make the corners rounded */
+  background: #1D263B; /* Background color set to a dark shade */
+  /* Add additional styles like padding, display, and flex if necessary */
+  padding: 20px; /* Padding inside the popup */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  display: flex; /* Example: Use flexbox for laying out inner elements */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  position: absolute; /* Position absolute to position the popup over other content */
+  top: 50%; /* Center the popup vertically */
+  left: 50%; /* Center the popup horizontally */
+  transform: translate(-50%, -50%); /* Offset by -50% of its size for perfect centering */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.popup-title {
+  width: 192px;
+  height: 39px;
+  position: absolute;
+  top: 35px;
+  left: 230px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39.06px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFF; 
+  background: none;
+  margin: 0; /* Remove default margins from heading element */
+}
+
+.popup input{
+margin-top: 39px;
+width: 343px;
+height: 48px;
+top: 113px;
+left: 142px;
+border-radius:30px;
+border: 1px solid #1C1C1C33;
+background-color: #FFFF;
+}
+
+.popup button {
+position: absolute;
+width: 105px;
+height: 32px;
+left: 270px;
+top: 200px;
+filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.1));
+background: #EAD2AC;
+border-radius: 100px;  
+
+font-family: 'DM Sans', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+color: #FFFF;
+}
+
+.close-button {
+color: #FFFF;
+font-size: 30px !important;
+top: -150px  !important;
+cursor: pointer;
+position: relative !important;
+z-index: 1 !important;
+height: 25px !important;
+width: 25px !important;
+line-height: 25px !important;
+text-align: center !important;
+background-color: transparent !important;
+border-radius: 10% !important;
+transform: rotate(-45deg);
+}
+
+
+.close-button::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 3px solid #FFFF;
+  border-radius: 50%;
+}
+
