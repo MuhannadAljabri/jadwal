@@ -304,9 +304,11 @@ width: 343px;
 height: 48px;
 top: 113px;
 border-radius:30px;
+text-align: center;
 border: 1px solid #1C1C1C33;
 background-color: #FFFF;
 }
+
 
 .popup button {
 position: absolute;
