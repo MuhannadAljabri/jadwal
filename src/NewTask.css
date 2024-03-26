@@ -1,0 +1,176 @@
+.popup-plus {
+  width: 627px;
+  height: 600px;
+  border-radius: 42px; /* Border radius will make the corners rounded */
+  background: #1d263b; /* Background color set to a dark shade */
+  /* Add additional styles like padding, display, and flex if necessary */
+  padding: 20px; /* Padding inside the popup */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  display: flex; /* Example: Use flexbox for laying out inner elements */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center children horizontally */
+  position: absolute; /* Position absolute to position the popup over other content */
+  top: 50%; /* Center the popup vertically */
+  left: 50%; /* Center the popup horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offset by -50% of its size for perfect centering */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+.popup-plus input {
+  margin-top: 100px;
+  width: 343px;
+  height: 30px;
+  top: 113px;
+  border-radius: 30px;
+  border: 1px solid #1c1c1c33;
+  background-color: #ffff;
+  font-family: 'Poppins';
+
+}
+
+.popup-plus button {
+position: relative;
+margin-top: 30px;
+width: 105px;
+height: 32px;
+filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.1));
+background: #EAD2AC;
+border-radius: 100px;  
+
+font-family: 'DM Sans', sans-serif;
+font-style: normal;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+color: #FFFF;
+font-family: 'Poppins';
+
+}
+.popup-plus h2 {
+  position: absolute;
+  top: 35px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 150%;
+  font-weight: 500;
+  line-height: 39.06px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffff;
+  background: none;
+  margin: 0;
+}
+
+.plus-close-button {
+  color: #ffff;
+  font-size: 30px !important;
+  top: -150px !important;
+  cursor: pointer;
+  position: relative !important;
+  z-index: 1 !important;
+  height: 25px !important;
+  width: 40px !important;
+  line-height: 25px !important;
+  text-align: center !important;
+  background-color: transparent !important;
+  border-radius: 10% !important;
+  transform: rotate(-45deg);
+}
+
+.plus-close-button::after {
+  content: "";
+  position: absolute;
+  transform: translate(-40%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+}
+
+.task-dropdown {
+  margin-top: 10px;
+  width: 343px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 30px;
+  border: 1px solid #1c1c1c33;
+  background-color: #ffff;
+  font-family: 'Poppins';
+
+}
+
+.dropdown-item {
+    background-color: #ffff;
+    font-family: 'Poppins';
+
+}
+
+.dropdown-square1 {
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 145, 0);}
+
+.description-box {
+  padding-top: 10px;
+  margin-top: 10px;
+  width: 343px;
+  height: 300px;
+  padding-left: 10px;
+  border-radius: 30px;
+  border: 1px solid #1c1c1c33;
+  background-color: #ffff;
+  font-family: 'Poppins';
+}
+
+.plus-sign {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    position: fixed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    display: flex; /* Example: Use flexbox for laying out inner elements */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center;
+    top: 50%; /* Center the popup vertically */
+  left: 50%; /* Center the popup horizontally */
+  transform: translate(-50%, -50%)
+  }
+  
+  .overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: azure;
+  }
+  
+  .tasks {
+    margin-top: 20px;
+  }
+  
+  .tasks h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
