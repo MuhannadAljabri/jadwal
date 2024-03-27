@@ -18,6 +18,7 @@
   ); /* Offset by -50% of its size for perfect centering */
   z-index: 1000; /* Ensure it's on top of other content */
 }
+
 .popup-plus input {
   margin-top: 100px;
   width: 343px;
@@ -27,7 +28,6 @@
   border: 1px solid #1c1c1c33;
   background-color: #ffff;
   font-family: 'Poppins';
-
 }
 
 .popup-plus button {
