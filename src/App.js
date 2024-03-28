@@ -4,9 +4,8 @@ import Home from './JedwalComponents/Home';
 import CategoryButton from './JedwalComponents/CategoryButton';
 import './NewTask.css';
 import AddTaskButton from './JedwalComponents/NewTaskButton'
-import logo from './logo.svg';
-import TaskLayout from './JedwalComponents/TaskLayout'; 
-
+import logo from './logo.svg'; 
+import TaskLayout from './JedwalComponents/TaskLayout';
 
 function App() {
 
@@ -17,8 +16,8 @@ function App() {
   const handleAddCategory = (newCategory) => {
     setCategories((prevCategories) => [...prevCategories, newCategory]);
   };
-  const handleAddTask = (taskTitle, priority, description) => {
-    setTasks([...tasks, { title: taskTitle, priority, description }]);
+  const handleAddTask = (taskTitle, priority, category, description) => {
+    setTasks([...tasks, { title: taskTitle, priority, category, description }]);
   };
 
   return (
@@ -31,14 +30,14 @@ function App() {
     </div>
       <CategoryButton onAddCategory={handleAddCategory} />
 
-            {categories.map((category, index) => (
+            {/*categories.map((category, index) => (}
       <div key={index}>{category}</div>
-      ))}
-      <div><AddTaskButton onAddTask={handleAddTask} /></div>
+            ))}  */}
+      <div><AddTaskButton onAddTask={handleAddTask} categories={categories} /></div>
+            
+     </div>
 
-      </div>
-      <div>
-    <TaskLayout></TaskLayout> </div>
+    <div> <TaskLayout></TaskLayout></div>
     </div>
   );
 }

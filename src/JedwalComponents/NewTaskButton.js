@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import CategoryButton from './CategoryButton';
 
-function AddTaskButton({ onAddTask }) {
+function AddTaskButton({ onAddTask, categories }) {
   const [showOverlay, setShowOverlay] = useState(false);
   const [taskTitle, setTaskTitle] = useState('');
   const [priority, setPriority] = useState('None');
+  const [selectedCategory, setSelectedCategory] = useState('');
   const [description, setDescription] = useState('');
 
   const toggleOverlay = () => {
@@ -15,6 +17,7 @@ function AddTaskButton({ onAddTask }) {
       onAddTask(taskTitle, priority, description);
       setTaskTitle('');
       setPriority('Medium');
+      setSelectedCategory(''); 
       setDescription('');
       setShowOverlay(false);
     }
@@ -45,14 +48,22 @@ function AddTaskButton({ onAddTask }) {
               onChange={(e) => setTaskTitle(e.target.value)}
             />
 
-           
-
+          <select className='task-dropdown' value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}>
+            <option value="">Choose Category</option>
+            {categories.map((category, index) => (
+              <option key={index} value={category}>{category}</option>
+              ))}
+            </select>
+            
             <select className='task-dropdown' value={priority} onChange={(e) => setPriority(e.target.value)}>
               <option className = "dropdown-item" value="None">None </option>
               <option className = "dropdown-item" value="High">High</option>
               <option className = "dropdown-item" value="Medium">Medium</option>
               <option className = "dropdown-item" value="Low">Low</option>
             </select>
+            
+
             <textarea className='description-box'
               placeholder="Enter task description"
               value={description}
