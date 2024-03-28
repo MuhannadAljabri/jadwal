@@ -4,7 +4,8 @@ import Home from './JedwalComponents/Home';
 import CategoryButton from './JedwalComponents/CategoryButton';
 import './NewTask.css';
 import AddTaskButton from './JedwalComponents/NewTaskButton'
-import logo from './logo.svg'; 
+import logo from './logo.svg';
+import TaskLayout from './JedwalComponents/TaskLayout'; 
 
 
 function App() {
@@ -36,7 +37,8 @@ function App() {
       <div><AddTaskButton onAddTask={handleAddTask} /></div>
 
       </div>
-
+      <div>
+    <TaskLayout></TaskLayout> </div>
     </div>
   );
 }

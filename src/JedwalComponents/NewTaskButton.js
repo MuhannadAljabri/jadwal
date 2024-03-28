@@ -44,6 +44,9 @@ function AddTaskButton({ onAddTask }) {
               value={taskTitle}
               onChange={(e) => setTaskTitle(e.target.value)}
             />
+
+           
+
             <select className='task-dropdown' value={priority} onChange={(e) => setPriority(e.target.value)}>
               <option className = "dropdown-item" value="None">None </option>
               <option className = "dropdown-item" value="High">High</option>
