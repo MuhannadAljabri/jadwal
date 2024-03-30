@@ -6,6 +6,7 @@ import './NewTask.css';
 import AddTaskButton from './JedwalComponents/NewTaskButton'
 import logo from './logo.svg'; 
 import TaskLayout from './JedwalComponents/TaskLayout';
+import PomoTimer from './JedwalComponents/PomoTimer';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
 
       <Home />
+      <PomoTimer />
       <div className='top-row'>
       <div className='logo'>
       <img src={logo} alt="Logo" height= "60" width= "100"/>

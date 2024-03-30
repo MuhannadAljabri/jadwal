@@ -70,6 +70,161 @@
   font-style: italic;
   background-color: white;
 }
+.pomodoro-timer{
+  border: 1px solid transparent;
+  position:absolute;
+  height: 90%;
+  width: 20%;
+  z-index: 100;
+  margin-top: 3%;
+  margin-left:75%;
+  background-color: transparent;
+}
+.timer-display{  
+  z-index: 30;
+  margin-top:3.5%;
+  margin-left: 35%;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 20px;
+  width: 40%;
+  height: 10%;
+  position: absolute;
+  font-size: 50px;
+}
+.timer-type{
+  background-color: transparent;
+  border:1px solid transparent;
+  z-index:30;
+  margin-top:28%;
+  margin-left: 25%;
+  position: absolute;
+  font-size: 30px;
+  color:#1D263B;
+  font-style: italic;
+}
+.Pomo-header{
+background-color: transparent;
+position: absolute;
+margin-top: 70%;
+margin-left: 25%;
+font-size: 15px;
+}
+
+.Start-button{
+  background-color:#1D263B;
+  color:white;
+  font-size: 25px;
+  margin: 20px;
+  z-index: 30;
+  width: 78%;
+  height: 13%;
+  border-radius: 30px 30px 30px 15px;
+  border: 1px solid black;
+  margin-top: 40%;
+  margin-left: -30%;
+  position: absolute;
+}
+
+.Settings-button{
+  background: transparent;
+  border:1px solid transparent;
+}
+
+.Settings-button img{
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: transparent;
+  width: 25px;
+  z-index: 100;
+  margin-top: 24%;
+  margin-left: 30%;
+  position: absolute;
+}
+
+.Reset-button{
+  background-color: rgb(222, 189, 147);
+  margin: 20px;
+  z-index: 40;
+  width: 20%;
+  height: 10%;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  margin-top: 60%;
+  margin-left: 5%;
+  position: absolute;
+  color:white;
+}
+
+.Reset-button p{
+  background-color: transparent;
+  color:white;
+  font-size:15px;
+  font-weight: bolder;
+  
+}
+.timer-settings-popup{
+  width: 300px;
+  height: 200px;
+  border-radius: 42px; /* Border radius will make the corners rounded */
+  background: #1D263B; /* Background color set to a dark shade */
+  /* Add additional styles like padding, display, and flex if necessary */
+  padding: 20px; /* Padding inside the popup */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  display: flex; /* Example: Use flexbox for laying out inner elements */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  position: absolute; /* Position absolute to position the popup over other content */
+  top: 60%; /* Center the popup vertically */
+  left: 55%; /* Center the popup horizontally */
+  transform: translate(-50%, -50%); /* Offset by -50% of its size for perfect centering */
+  z-index: 1000;
+}
+.timer-settings{
+  background-color: #1D263B;
+
+}
+.timer-settings h1{
+  position:absolute;
+  background-color: transparent;
+  color:white;
+  margin-top: -10%;
+  margin-left:22%;
+  font-size: 20px;
+  font-style: normal;
+}
+.timer-settings label{
+  background-color: transparent;
+  color:white;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.timer-settings input{
+  background-color: white;
+  border:1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.cancel-button{
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.cancel-icon{
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: black;
+  width: 30px;
+  z-index: 100;
+  margin-top: -55%;
+  margin-left: 35%;
+  position:absolute;
+}
+
 .content{
   display: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
