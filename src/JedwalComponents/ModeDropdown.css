@@ -1,0 +1,44 @@
+/* ModeDropdown.css */
+.mode-dropdown-wrapper {
+    display: flex; /* Aligns children (label and select) in a row */
+    align-items: center; /* Centers children vertically */
+    background: #FFFFFF; /* White background for the dropdown */
+    border-radius: 22px; /* Oval shape */
+    padding: 10px 20px; /* Padding around the content */
+    position: relative; /* Needed for absolute positioning of the arrow */
+    width: auto; /* Adjusts width as needed */
+    min-width: 150px; /* Ensures dropdown does not get too narrow */
+    margin-top: -30px;
+  }
+  
+  .mode-label {
+    margin-right: 10px; /* Space between the label and the dropdown */
+    background: #FFFFFF; /* Ensures label background matches the wrapper */
+    font-size: 16px; /* Match font size to dropdown for consistency */
+  }
+  
+  .mode-select {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none; /* Removes default dropdown styling for Webkit browsers */
+    -moz-appearance: none; /* Removes default dropdown styling for Firefox */
+    appearance: none;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    width: 100%; /* Allows dropdown to fill the rest of the container */
+  }
+  
+  /* Adjust arrow positioning */
+  .mode-dropdown-wrapper::after {
+    content: '▼';
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #000;
+    font-size: 1rem;
+  }
+  
