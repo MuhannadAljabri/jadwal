@@ -409,12 +409,13 @@ font-size: 15px;
   width: 145px;
   height: 22px;
   position: relative;
+  left: -30px;
   background: none;
   color: #4A4A48;
   border: none;
   cursor: pointer;
   font-family: 'DM Sans', sans-serif;
-  font-size: 100%;
+  font-size: 115%;
   border-radius: 4px;
   animation-duration: 0ms; /* Instant animation as required, though this will not have any visible effect */
   transition: background-color 0.3s; /* Assuming you want a color change on hover, for example */
@@ -516,8 +517,8 @@ transform: rotate(-45deg);
 }
 
 .plus-button-container{
-  width: 20px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   position: relative;
   padding-right: 3%;
   padding-left: 3%;
@@ -527,7 +528,7 @@ transform: rotate(-45deg);
   cursor: pointer;
   font-family: 'DM Sans', sans-serif;
   font-size: 15px;
-  border-radius: 4px;
+  border-radius: 50%;
   animation-duration: 0ms; /* Instant animation as required, though this will not have any visible effect */
   transition: background-color 0.3s; /* Assuming you want a color change on hover, for example */
 }
@@ -597,5 +598,44 @@ transform: rotate(-45deg);
   width: 85%;
   z-index: 22;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.mode-dropdown-wrapper {
+  display: flex; /* Aligns children (label and select) in a row */
+  align-items: center; /* Centers children vertically */
+  background: #FFFFFF; /* White background for the dropdown */
+  border-radius: 22px; /* Oval shape */
+  padding: 10px 20px; /* Padding around the content */
+  position: relative; /* Needed for absolute positioning of the arrow */
+  width: 250px; /* Adjusts width as needed */
+  height: 30px;
+  left: 195px;
+  bottom: 45px;
+  min-width: 15px; /* Ensures dropdown does not get too narrow */
+  margin-top: -30px;
+}
+
+.mode-label {
+  margin-right: 10px; /* Space between the label and the dropdown */
+  background: #FFFFFF; /* Ensures label background matches the wrapper */
+  font-size: 21px; /* Match font size to dropdown for consistency */
+  font-family: 'Poppins', sans-serif;
+  color: rgba(74, 74, 72, 1);
+  
+}
+
+.mode-select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 21px;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(74, 74, 72, 1);
+  cursor: pointer;
+  width: 100%;  
+}
+
+
 
 

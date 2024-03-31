@@ -1,6 +1,5 @@
 // JedwalComponents/ModeDropdown.js
 import React, { useState } from 'react';
-import './ModeDropdown.css'; // Make sure to create and import this CSS file
 
 const ModeDropdown = () => {
   const [selectedMode, setSelectedMode] = useState('ALL'); // Default mode

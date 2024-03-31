@@ -7,6 +7,7 @@ import AddTaskButton from './JedwalComponents/NewTaskButton'
 import logo from './logo.svg'; 
 import TaskLayout from './JedwalComponents/TaskLayout';
 import PomoTimer from './JedwalComponents/PomoTimer';
+import ModeDropdown from './JedwalComponents/ModeDropdown';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
      </div>
 
     <div> <TaskLayout></TaskLayout></div>
+    <div> <ModeDropdown></ModeDropdown></div>
     </div>
   );
 }
