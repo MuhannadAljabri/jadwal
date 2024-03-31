@@ -1,7 +1,8 @@
 
 *{
   background-color: rgb(222, 189, 147);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins';
+
 }
 .App {
   text-align: center;
@@ -87,8 +88,8 @@
   border: 1px solid black;
   background-color: white;
   border-radius: 20px;
-  width: 40%;
-  height: 10%;
+  width: 50%;
+  height: 11%;
   position: absolute;
   font-size: 50px;
 }
@@ -99,18 +100,19 @@
   margin-top:28%;
   margin-left: 25%;
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   color:#1D263B;
-  font-style: italic;
 }
 .Pomo-header{
-background-color: transparent;
+background-color: white;
 position: absolute;
 margin-top: 70%;
 margin-left: 25%;
 font-size: 15px;
 }
-
+.timer-controls {
+  background-color: transparent;
+}
 .Start-button{
   background-color:#1D263B;
   color:white;
@@ -165,7 +167,7 @@ font-size: 15px;
 }
 .timer-settings-popup{
   width: 300px;
-  height: 200px;
+  height: 250px;
   border-radius: 42px; /* Border radius will make the corners rounded */
   background: #1D263B; /* Background color set to a dark shade */
   /* Add additional styles like padding, display, and flex if necessary */

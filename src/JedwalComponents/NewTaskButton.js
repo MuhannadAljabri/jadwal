@@ -43,21 +43,21 @@ function AddTaskButton({ onAddTask, categories }) {
             <h2>Add Task</h2>
             <input
               type="text"
-              placeholder="    Enter task title"
+              placeholder="Enter task title"
               value={taskTitle}
               onChange={(e) => setTaskTitle(e.target.value)}
             />
 
           <select className='task-dropdown' value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}>
-            <option value="">Choose Category</option>
+            <option className = "dropdown-item" value="">Choose Category</option>
             {categories.map((category, index) => (
-              <option key={index} value={category}>{category}</option>
+              <option className = "dropdown-item" key={index} value={category}>{category}</option>
               ))}
             </select>
             
             <select className='task-dropdown' value={priority} onChange={(e) => setPriority(e.target.value)}>
-              <option className = "dropdown-item" value="None">None </option>
+              <option className = "dropdown-item" value="None">Choose Priority </option>
               <option className = "dropdown-item" value="High">High</option>
               <option className = "dropdown-item" value="Medium">Medium</option>
               <option className = "dropdown-item" value="Low">Low</option>
@@ -65,7 +65,7 @@ function AddTaskButton({ onAddTask, categories }) {
             
 
             <textarea className='description-box'
-              placeholder="Enter task description"
+              placeholder="   Enter task description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             ></textarea>

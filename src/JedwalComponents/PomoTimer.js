@@ -74,7 +74,7 @@ const PomoTimer = () => {
           </div>
           <button className="Reset-button" onClick={resetTimer}>Add</button>
           <button className="cancel-button" onClick={() => setShowSettings(false)}>
-            <img className="cancel-icon" src={cancelIcon} alt="cancel icon" />
+          <span className="close-btn" >×</span>
           </button>
         </div>
       )}

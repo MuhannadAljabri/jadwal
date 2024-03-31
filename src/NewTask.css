@@ -20,6 +20,7 @@
 }
 
 .popup-plus input {
+  padding-left: 10px;
   margin-top: 100px;
   width: 343px;
   height: 30px;
@@ -38,7 +39,6 @@ height: 32px;
 filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.1));
 background: #EAD2AC;
 border-radius: 100px;  
-
 font-family: 'DM Sans', sans-serif;
 font-style: normal;
 font-size: 12px;
@@ -113,6 +113,7 @@ font-family: 'Poppins';
 
 .description-box {
   padding-top: 10px;
+  padding-left: 50px;
   margin-top: 10px;
   width: 343px;
   height: 300px;
