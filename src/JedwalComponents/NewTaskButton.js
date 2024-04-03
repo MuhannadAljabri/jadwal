@@ -38,7 +38,6 @@ function AddTaskButton({ onAddTask, categories }) {
           width="24"
           height="24"
           fill="currentColor"
-          className="bi bi-plus"
           viewBox="0 0 16 16"
         >
           <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
@@ -46,9 +45,8 @@ function AddTaskButton({ onAddTask, categories }) {
       </div>
       {showOverlay && (
         <div className="popup-plus">
-          <span className="close-btn" onClick={toggleOverlay}>
-            ×
-          </span>
+          <span className="close-btn" onClick={toggleOverlay}>×</span>
+
           <h2>Add Task</h2>
           <input className="popup-plus-title"
             type="text"
@@ -57,7 +55,7 @@ function AddTaskButton({ onAddTask, categories }) {
             onChange={(e) => setTaskTitle(e.target.value)}
           />
 
-<div className = "tabs">
+          <div className = "tabs">
             {['Project', 'Class', 'Assignment'].map(tabName => (
               <div 
               key = {tabName}

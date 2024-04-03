@@ -76,8 +76,7 @@ const PomoTimer = () => {
           <button className="cancel-button" onClick={() => setShowSettings(false)}>
           <span className="close-btn" >×</span>
           </button>
-        </div>
-      )}
+        </div>      )}
     </div>
   );
 };
