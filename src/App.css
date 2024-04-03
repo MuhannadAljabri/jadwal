@@ -1,6 +1,6 @@
 
 *{
-  background-color: rgb(222, 189, 147);
+  background-color: rgb(224, 192, 149);
   font-family: 'Poppins';
 
 }
@@ -72,6 +72,7 @@
   background-color: white;
 }
 .pomodoro-timer{
+  bottom: 70px;
   border: 1px solid transparent;
   position:absolute;
   height: 90%;
@@ -182,6 +183,7 @@ font-size: 15px;
   left: 55%; /* Center the popup horizontally */
   transform: translate(-50%, -50%); /* Offset by -50% of its size for perfect centering */
   z-index: 1000;
+  font-family: 'DM Sans', sans-serif;
 }
 .timer-settings{
   background-color: #1D263B;
@@ -195,12 +197,14 @@ font-size: 15px;
   margin-left:22%;
   font-size: 20px;
   font-style: normal;
+  font-family: 'DM Sans', sans-serif;
 }
 .timer-settings label{
   background-color: transparent;
   color:white;
   font-size: 15px;
   margin-bottom: 5px;
+  font-family: 'DM Sans', sans-serif;
 }
 .timer-settings input{
   background-color: white;
@@ -209,6 +213,7 @@ font-size: 15px;
   margin-bottom: 20px;
   margin-top: 5px;
   border-radius: 5px;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .cancel-button{
@@ -226,6 +231,7 @@ font-size: 15px;
   margin-left: 35%;
   position:absolute;
 }
+
 
 .content{
   display: none;
@@ -487,35 +493,6 @@ text-align: center;
 color: #FFFF;
 }
 
-.close-button {
-color: #FFFF;
-font-size: 30px !important;
-top: -150px  !important;
-cursor: pointer;
-position: relative !important;
-z-index: 1 !important;
-height: 25px !important;
-width: 25px !important;
-line-height: 25px !important;
-text-align: center !important;
-background-color: transparent !important;
-border-radius: 10% !important;
-transform: rotate(-45deg);
-}
-
-
-.close-button::after {
-  content: '';
-  position: absolute;
-  top: 60%;
-  left: 58%;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  border: 3px solid #FFFF;
-  border-radius: 50%; 
-}
-
 .plus-button-container{
   width: 25px;
   height: 25px;
@@ -625,7 +602,7 @@ transform: rotate(-45deg);
   
 }
 
-.mode-select {
+.mode-dropdown-wrapper select {
   border: none;
   outline: none;
   background: transparent;
@@ -636,6 +613,109 @@ transform: rotate(-45deg);
   width: 100%;  
 }
 
+.mode-dropdown-wrapper select option {
+  background-color: white;
+  width: 100%;
+}
+
+.close-btn{
+  position: absolute;
+  top: -15px; /* Adjust the top position to move the button up */
+  right: -15px; /* Adjust the right position to move the button to the right */
+  width: 30px; /* Set the width of the button */
+  height: 30px; /* Set the height of the button */
+  background-color: transparent; /* Set the background color of the button */
+  border: 4px solid white; /* Set a border around the button */
+  border-radius: 50%; /* Make the button round */
+  font-size: 18px; /* Set the font size of the button */
+  cursor: pointer;
+  z-index: 1; /* Ensure the button appears above the popup content */
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.tabs {
+  display: flex;
+  background-color: transparent;
+  margin-left: 10px;
+  
+}
+
+.tab {
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 100px;
+  background-color: white;
+  border: 1px solid rgba(28, 28, 28, 0.2);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15.62px;
+  text-align: center;
 
 
+}
 
+.tab.active {
+  background-color: rgb(224, 192, 149);
+  color: #fff;
+}
+
+.checkmark {
+  margin-left: 5px;
+}
+
+.timer-display{
+  top: 250px;
+}
+
+.plus-sign {
+  width: 30px; /* Set the width of the button */
+  height: 30px; /* Set the height of the button */
+  left: 1326px;
+  background-color: transparent; /* Set the background color of the button */
+  border: 4px solid white; /* Set a border around the button */
+  border-radius: 50%; /* Make the button round */
+  font-size: 18px; /* Set the font size of the button */
+  cursor: pointer;
+  z-index: 1; /* Ensure the button appears above the popup content */
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bi-plus {
+  color: white;
+  width: 21px;
+  height: 21px;
+}
+
+/* CSS for deadline input */
+.deadline-input {
+  padding: 2px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.deadline-input:focus {
+  outline: none;
+  align-items: center;
+  display: flex;
+}
+
+.blah {
+  position: flex;
+  align-items: center;
+  width: auto;
+  background: transparent;
+}

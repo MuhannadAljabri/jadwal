@@ -53,7 +53,7 @@ const PomoTimer = () => {
     <div className="pomodoro-timer">
       <h1 className = "timer-type">{timerType === 'work' ? 'Work' : 'Break'}</h1>
       <h1 className = "Pomo-header">Pomodoro Timer</h1>
-      <div className="timer-display">{formatTime(timeLeft)}</div>
+      {timerActive && <div className="timer-display">{formatTime(timeLeft)}</div>}
       <div className="timer-controls">
         <button className="Start-button" onClick={toggleTimer}>{timerActive ? 'PAUSE' : 'START'}</button>
         <button className="Settings-button" onClick={() => setShowSettings(true)}>
@@ -76,8 +76,7 @@ const PomoTimer = () => {
           <button className="cancel-button" onClick={() => setShowSettings(false)}>
           <span className="close-btn" >×</span>
           </button>
-        </div>
-      )}
+        </div>      )}
     </div>
   );
 };

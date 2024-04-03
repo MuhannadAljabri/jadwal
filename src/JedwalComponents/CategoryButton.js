@@ -32,7 +32,7 @@ return (
                 onChange={(e) => setCategoryName(e.target.value)}
             />
            <button onClick={handleAddClick}>Add</button>
-           <button className="close-button" onClick={handleCloseClick}>+</button>
+           <span className = "close-btn" onClick={handleCloseClick}>×</span> 
         </div>
         )}
     </div>
