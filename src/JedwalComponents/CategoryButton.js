@@ -31,7 +31,7 @@ return (
                 value={categoryName}
                 onChange={(e) => setCategoryName(e.target.value)}
             />
-           <button onClick={handleAddClick}>Add</button>
+           <button  onClick={handleAddClick}>Add</button>
            <button className="close-button" onClick={handleCloseClick}>+</button>
         </div>
         )}

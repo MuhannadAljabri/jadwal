@@ -1,6 +1,5 @@
 
 *{
-  background-color: rgb(222, 189, 147);
   font-family: 'Poppins';
 
 }
@@ -546,11 +545,12 @@ transform: rotate(-45deg);
 }
 
 .layout-card1 {
+  background-color: #1D263B;
   position: absolute;
   width: 288px;
   height: 569px;
   top: 125px;
-  left: 300px;
+  left: 200px;
   gap: 0px;
   opacity: 0px;
   color: #ffbfae;
@@ -570,11 +570,12 @@ transform: rotate(-45deg);
 }
 
 .layout-card2 {
+  background-color: #1D263B;
   position: absolute;
   width: 288px;
   height: 569px;
   top: 125px;
-  left: 700px;
+  left: 600px;
   gap: 0px;
   opacity: 0px;
   color: #ffbfae;
@@ -602,6 +603,7 @@ transform: rotate(-45deg);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .mode-dropdown-wrapper {
+  border: 1px solid black;
   display: flex; /* Aligns children (label and select) in a row */
   align-items: center; /* Centers children vertically */
   background: #FFFFFF; /* White background for the dropdown */
