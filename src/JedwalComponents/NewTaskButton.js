@@ -10,6 +10,7 @@ function AddTaskButton({ onAddTask, categories }) {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [description, setDescription] = useState("");
   const [deadline, setDeadline] = useState(new Date());
+  const [activeTab, setActiveTab] = useState('');
 
   const toggleOverlay = () => {
     setShowOverlay(!showOverlay);
@@ -17,13 +18,15 @@ function AddTaskButton({ onAddTask, categories }) {
 
   const handleAddTask = () => {
     if (taskTitle.trim() !== "") {
-      onAddTask(taskTitle, priority, description);
+      onAddTask(taskTitle, priority, description, deadline);
       setTaskTitle("");
       setPriority("Medium");
       setSelectedCategory("");
       setDeadline(new Date());
       setDescription("");
       setShowOverlay(false);
+      setActiveTab('');
+      setDeadline('');
     }
   };
 
@@ -53,6 +56,22 @@ function AddTaskButton({ onAddTask, categories }) {
             value={taskTitle}
             onChange={(e) => setTaskTitle(e.target.value)}
           />
+
+<div className = "tabs">
+            {['Project', 'Class', 'Assignment'].map(tabName => (
+              <div 
+              key = {tabName}
+              className = {`tab ${activeTab === tabName.toLowerCase() ? 'active' : ''}`}
+              onClick={() => setActiveTab(tabName.toLowerCase())}
+              >
+    
+                {tabName}
+                {activeTab === tabName.toLowerCase() && (
+                  <span className="checkmark">✓</span> )}
+              </div>
+            ))}
+            </div>
+
           
 
           <DatePicker className= "custom-datepicker" selected={deadline} onChange={(date) => setDeadline(date)} />
