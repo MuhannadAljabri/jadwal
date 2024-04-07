@@ -18,9 +18,9 @@ function AddTaskButton({ onAddTask, categories }) {
 
   const handleAddTask = () => {
     if (taskTitle.trim() !== "") {
-      onAddTask(taskTitle, priority, description, deadline);
-      setTaskTitle("");
-      setPriority("Medium");
+      onAddTask(taskTitle, priority, selectedCategory, deadline, description);
+      setTaskTitle();
+      setPriority();
       setSelectedCategory("");
       setDeadline(new Date());
       setDescription("");

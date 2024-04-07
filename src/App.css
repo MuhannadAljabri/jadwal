@@ -516,6 +516,13 @@ color: #FFFF;
   margin-right: 30px;
 }
 
+.top-row1 {
+  display: flex;
+  justify-content:left;
+  margin-top: 30px;
+  margin-left: 15%;
+  gap: 10%;
+}
 .logo {
   margin-left: 0;
   margin-right: auto;
@@ -827,4 +834,33 @@ color: #FFFF;
   align-items: center;
   width: auto;
   background: transparent;
+}
+
+.task-list {
+  width: 25%;
+  height: 500px;
+  border-radius: 42px; /* Border radius will make the corners rounded */
+  background: #1d263b; /* Background color set to a dark shade */
+  /* Add additional styles like padding, display, and flex if necessary */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  display: flex; /* Example: Use flexbox for laying out inner elements */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center children horizontally */
+  z-index: 0; /* Ensure it's on top of other content */
+}
+
+.task-list h2 {
+  color: #FFFFFF;
+}
+
+.task-titles {
+  color: #fff;
+  justify-content:left;
+
+}
+
+.checkbox{
+  border-radius: 4px;
+  width: 15px;
+  height: 15px;
 }

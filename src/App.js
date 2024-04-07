@@ -8,17 +8,23 @@ import logo from "./logo.svg";
 import TaskLayout from "./JedwalComponents/TaskLayout";
 import PomoTimer from "./JedwalComponents/PomoTimer";
 import ModeDropdown from "./JedwalComponents/ModeDropdown";
+import TaskLists from './JedwalComponents/TaskLayout';
+
 
 function App() {
   // State to hold the list of categories
   const [categories, setCategories] = useState([]);
   const [tasks, setTasks] = useState([]);
 
+  const addTask = (newTask) => {
+    setTasks([...tasks, newTask]);
+  };
+
   const handleAddCategory = (newCategory) => {
     setCategories((prevCategories) => [...prevCategories, newCategory]);
   };
-  const handleAddTask = (taskTitle, priority, category, description) => {
-    setTasks([...tasks, { title: taskTitle, priority, category, description }]);
+  const handleAddTask = (taskTitle, priority, category, deadline, description) => {
+    setTasks([...tasks, { taskTitle, priority, category,deadline, description }]);
   };
 
   return (
@@ -36,12 +42,13 @@ function App() {
 
       <div>
         {" "}
-        <TaskLayout></TaskLayout>
+        <ModeDropdown></ModeDropdown>
       </div>
       <div>
         {" "}
-        <ModeDropdown></ModeDropdown>
+        <TaskLists tasks={tasks} />
       </div>
+      
     </div>
   );
 }

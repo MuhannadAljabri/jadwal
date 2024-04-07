@@ -11,7 +11,7 @@ function TaskItem({ task }) {
   return (
     <li style={{ textDecoration: completed ? 'line-through' : 'none' }}>
       <div>
-        <h3>{task.title}</h3>
+        <h3 className='task-titles'>{task.taskTitle} <input className='checkbox' type="checkbox" onChange={handleCheck} /></h3>
       </div>
     </li>
   );
