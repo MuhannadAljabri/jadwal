@@ -19,9 +19,11 @@ const PomoTimer = () => {
     } else if (timeLeft === 0) {
       // Switch between work and break time
       if (timerType === 'work') {
+        alert('Work time is over. Take a break!');
         setTimeLeft(breakTime);
         setTimerType('break');
       } else {
+        alert('Break time is over. Get back to work!');
         setTimeLeft(workTime);
         setTimerType('work');
       }
@@ -72,7 +74,7 @@ const PomoTimer = () => {
             <label htmlFor="breakTime">Break Time (minutes): </label>
             <input type="number" id="breakTime" value={breakTime / 60} placeholder = "min" onChange={(e) => setBreakTime(parseInt(e.target.value) * 60)} />
           </div>
-          <button className="Reset-button" onClick={resetTimer}>Add</button>
+          <button className="Reset-button" onClick={resetTimer}>Set</button>
           <button className="cancel-button" onClick={() => setShowSettings(false)}>
           <span className="close-btn" >×</span>
           </button>
