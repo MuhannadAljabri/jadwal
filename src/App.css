@@ -145,7 +145,7 @@ font-size: 15px;
 }
 
 .Reset-button{
-  background-color: rgb(222, 189, 147);
+  background-color: rgb(255, 255, 255);
   margin: 20px;
   z-index: 40;
   width: 20%;
@@ -155,7 +155,7 @@ font-size: 15px;
   margin-top: 60%;
   margin-left: 5%;
   position: absolute;
-  color:white;
+  color:rgb(0, 0, 0);
 }
 
 .Reset-button p{
@@ -480,16 +480,16 @@ height: 32px;
 left: 270px;
 top: 200px;
 filter: drop-shadow(0px 4px 9px rgba(0, 0, 0, 0.1));
-background: #EAD2AC;
+background: #ffffff;
 border-radius: 100px;  
 
 font-family: 'DM Sans', sans-serif;
 font-style: normal;
-font-weight: 700;
 font-size: 12px;
 line-height: 18px;
 text-align: center;
-color: #FFFF;
+color: #000000;
+
 }
 
 .plus-button-container{

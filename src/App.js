@@ -35,9 +35,7 @@ function App() {
           <img src={logo} alt="Logo" height="60" width="100" />
         </div>
         <CategoryButton onAddCategory={handleAddCategory} />
-        <div>
           <AddTaskButton onAddTask={handleAddTask} categories={categories} />
-        </div>
       </div>
 
       <div>

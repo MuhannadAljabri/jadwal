@@ -214,3 +214,9 @@ font-family: 'Poppins';
   
   }
   
+  .plus-button{
+    width: 20px;
+    height: 45px;
+    background: none;
+    border: none;
+  }

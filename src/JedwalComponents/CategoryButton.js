@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import '../NewTask.css'
+
 
 const CategoryButton = ({ onAddCategory }) => {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -31,7 +33,7 @@ return (
                 value={categoryName}
                 onChange={(e) => setCategoryName(e.target.value)}
             />
-           <button  onClick={handleAddClick}>Add</button>
+           <button className="popup-plus-add-button" onClick={handleAddClick}>Add</button>
            <span className = "close-btn" onClick={handleCloseClick}>×</span> 
         </div>
         )}
