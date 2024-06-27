@@ -1,5 +1,5 @@
-# Jadwal Schedule Planner
-- Jadwal is a schedule planner web application that is designed for efficient time management. 
+# Jadwal 
+- Jadwal is a **schedule planner** web application that is designed for efficient time management. 
 - This project focuses solely on the front-end development of the application.
 
 ## Motivation
