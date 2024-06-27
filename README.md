@@ -23,13 +23,13 @@ To run the Jadwal Schedule Planner locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/jadwal-schedule-planner.git
+    git clone https://github.com/yourusername/jadwal.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd jadwal-schedule-planner
+    cd jadwal
     ```
 
 3. Install the dependencies:
